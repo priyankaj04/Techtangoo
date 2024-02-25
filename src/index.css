@@ -33,11 +33,6 @@ code {
   padding: 40px;
 }
 
-.main .mask span,
-.main .body span {
-  color: #ec4e39;
-}
-
 .main .mask {
   mask-image: url('./images/mask.svg');
   mask-repeat: no-repeat;
