@@ -1,18 +1,16 @@
-import React from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import Spline from '@splinetool/react-spline';
 
 function Home() {
+
+  const [hover, setHover] = useState(false);
   return (
-    <div id="home" className='h-screen'>
-      <div className='flex lg:flex-row md:flex-col sm:flex-col justify-center flex-1 items-center'>
-        <div className=''>
-          <h3>Hello There!</h3>
-          <h2>We are TechTangoo :)</h2>
-        </div>
-        <div className='w-1/2 h-96 justify-center bg-yellow-500'>
-          <Spline width={"700px"} className='w-90' scene="https://prod.spline.design/adabPntTxRtyYAhD/scene.splinecode" />
-        </div>
+    <div id="home" className='h-screen flex-col lg:flex-row xl:flex-row 2xl:flex-row md:flex-col sm:flex-col justify-center flex-1 items-center'>
+      <div className='flex-1 mt-16 text-3xl'>
+        <h3 className='font-bold text-center text-green-400' onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>Hello There!</h3>
+        <h2 className='font-bold text-center text-white' onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>We are TechTangoo ⊙⊙</h2>
       </div>
+      {/*<Spline scene="https://prod.spline.design/adabPntTxRtyYAhD/scene.splinecode" />*/}
     </div>
   )
 }
