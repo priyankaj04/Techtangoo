@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,40 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main {
+  height: 100%;
+}
+
+.main .mask,
+.main .body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  line-height: 66px;
+  cursor: default;
+}
+
+.main .mask p,
+.main .body p {
+  width: 1000px;
+  padding: 40px;
+}
+
+.main .mask span,
+.main .body span {
+  color: #ec4e39;
+}
+
+.main .mask {
+  mask-image: url('./images/mask.svg');
+  mask-repeat: no-repeat;
+  mask-size: 50px;
+  background: #4ade80;
+  position: absolute;
+  color: white;
 }
