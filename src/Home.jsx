@@ -41,8 +41,8 @@ export default function Home() {
 
     return (
         <Fragment>
-            <div className="fixed z-100 flex-col items-center left-0 top-1/3" >
-                <div className='flex flex-col rounded-full shadow-md' style={{ backgroundColor: 'rgba(74, 222, 128, 0.1)', backdropFilter: 'blur(10px)' }}>
+            <div className="fixed flex-col items-center left-0 top-1/3" >
+                <div className='flex flex-col z-50 rounded-full shadow-md' style={{ backgroundColor: 'rgba(74, 222, 128, 0.1)', backdropFilter: 'blur(10px)' }}>
                     <div className='flex flex-col justify-evenly items-center py-5 gap-10'>
                         <Link
                             activeClass="active"
@@ -116,6 +116,9 @@ export default function Home() {
                     <HomePage />
                 </Element>
                 <Marquee pauseOnHover className='bg-green-400 h-20 text-3xl'>
+                    TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO  TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO{" "}
+                </Marquee>
+                <Marquee pauseOnHover direction='right' className='bg-green-400 h-20 text-3xl mt-5'>
                     TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO  TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO{" "}
                 </Marquee>
                 <Element name="services">
