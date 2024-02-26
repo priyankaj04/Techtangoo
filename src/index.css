@@ -27,12 +27,6 @@ code {
   cursor: default;
 }
 
-.main .mask p,
-.main .body p {
-  width: 1000px;
-  padding: 40px;
-}
-
 .main .mask {
   mask-image: url('./images/mask.svg');
   mask-repeat: no-repeat;

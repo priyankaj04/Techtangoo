@@ -22,7 +22,6 @@ function Home() {
             We are dedicated to providing unparalleled service tailored to your business's unique needs.
           </div>
         </div>
-        <Spline scene="https://prod.spline.design/adabPntTxRtyYAhD/scene.splinecode" />
       </div>
     </div>
   )

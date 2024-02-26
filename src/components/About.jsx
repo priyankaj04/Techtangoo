@@ -21,6 +21,9 @@ import redux from '../images/redux.svg';
 import threejs from '../images/threejs.svg';
 import typescript from '../images/typescript.svg';
 import mongodb from '../images/mongodb.svg';
+import whyus1 from '../images/1.png'
+import whyus2 from '../images/2.png'
+import whyus3 from '../images/3.png'
 
 function About() {
   return (
@@ -38,7 +41,11 @@ function About() {
       </div>
       <div className='mt-10'>
         <h3 className='text-green-400 text-2xl text-center font-bold'>Why Us?</h3>
-        <p className='text-green-200'>1. Fast and Smooth Interface.<br></br>2. Clean code and easy to maintain. <br></br>3. Your requirements and our creativty works well together to bring best product.</p>
+        <div className='mt-5 flex flex-wrap justify-center flex-1 gap-5'>
+          <img src={whyus1} className={`w-1/4 object-cover rounded-lg transition duration-300 ease-in-out transform shadow-md`} />
+          <img src={whyus2} className={`w-1/4 object-cover rounded-lg transition duration-300 ease-in-out transform shadow-md`} />
+          <img src={whyus3} className={`w-1/4 object-cover rounded-lg transition duration-300 ease-in-out transform shadow-md`} />
+        </div>
       </div>
       <div className='mt-10'>
         <h3 className='text-green-400 text-2xl text-center font-bold' >Tech Stacks</h3>
@@ -64,11 +71,6 @@ function About() {
           <img src={typescript} className={`w-10 h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
           <img src={mongodb} className={`w-10 h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
         </div>
-      </div>
-      <div>
-        <h3>Contact Us!</h3>
-        <input placeholder='example@mail.xyz' />
-        <textarea placeholder='message...' />
       </div>
     </div>
   )
