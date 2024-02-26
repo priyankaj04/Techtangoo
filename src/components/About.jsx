@@ -24,17 +24,23 @@ import mongodb from '../images/mongodb.svg';
 import whyus1 from '../images/1.png'
 import whyus2 from '../images/2.png'
 import whyus3 from '../images/3.png'
+import d3 from '../images/d3.svg';
+import flutter from '../images/flutter.svg';
+import graphql from '../images/graphql.svg';
+import sass from '../images/sass.svg'
+import tailwind from '../images/tailwind.svg'
+import vue from '../images/vue.svg'
 
 function About() {
   return (
     <div id="about" className='w-screen h-auto mt-10'>
       <h3 className='text-green-400 text-2xl text-center font-bold'>Who are we?</h3>
-      <div className='flex flex-col lg:flex-row xl:flex-row 2xl:flex-row gap-5'>
-        <div className='flex flex-1 gap-5' >
+      <div className='flex flex-col lg:flex-row ml-10 xl:flex-row 2xl:flex-row gap-5'>
+        <div className='flex flex-1 gap-5 items-center' >
           <img src={priyanka} className={`w-40 h-40 object-cover rounded-lg transition duration-300 ease-in-out transform`} />
           <p className='text-green-200' ><span className='font-bold text-lg' >Hai! I'm Priyanka J</span><br></br>I'm working as Software Developer @ Circle Health.<br></br> I have 2 years of experience in Software Development.</p>
         </div>
-        <div className='flex flex-1 gap-5' >
+        <div className='flex flex-1 gap-5 items-center' >
           <img src={haarvish} className={`w-40 h-40 object-cover rounded-lg transition duration-300 ease-in-out transform`} />
           <p className='text-wrap text-green-200' ><span className='font-bold text-lg' >Hai! I'm Haarvish C</span><br></br>I'm working as Software Developer @ Bluejay.<br></br> I'm tech-enthusiast and excited to keep learning more.</p>
         </div>
@@ -55,21 +61,27 @@ function About() {
           <img src={angularicon} className={`w-10 h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
           <img src={blender} className={`h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
           <img src={bootstrap} className={`w-10 h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
-          <img src={django} className={`h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
+          <img src={django} className={`h-10 object-cover transition duration-300 ease-in-out transform hover:scale-105`} />
           <img src={docker} className={`w-10 h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
           <img src={express} className={`h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
           <img src={figma} className={`h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
           <img src={gatsby} className={`w-10 h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
           <img src={javascript} className={`w-10 h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
-          <img src={materialui} className={`h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
-          <img src={node} className={`w-10 h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
+          <img src={materialui} className={`h-10 object-cover transition duration-300 ease-in-out transform hover:scale-105`} />
+          <img src={node} className={`w-10  object-cover transition duration-300 ease-in-out transform hover:scale-105`} />
           <img src={postgresql} className={`w-10 h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
           <img src={python} className={`w-10 h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
           <img src={redis} className={`h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
           <img src={redux} className={`h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
-          <img src={threejs} className={`h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
+          <img src={threejs} className={`h-10 object-cover transition duration-300 ease-in-out transform hover:scale-105`} />
           <img src={typescript} className={`w-10 h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
           <img src={mongodb} className={`w-10 h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
+          <img src={d3} className={`h-10 object-cover transition duration-300 ease-in-out transform hover:scale-105`} />
+          <img src={graphql} className={`h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
+          <img src={sass} className={`h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
+          <img src={tailwind} className={`h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
+          <img src={vue} className={`h-10 object-cover  transition duration-300 ease-in-out transform hover:scale-105`} />
+          <img src={flutter} className={`w-10 h-10 object-cover rounded-lg transition duration-300 ease-in-out transform hover:scale-105`} />
         </div>
       </div>
     </div>

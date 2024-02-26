@@ -4,7 +4,6 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Services from './components/Services';
 import { Link, Button, Element, scroller, animateScroll as scroll, scrollSpy } from 'react-scroll';
-import Marquee from "react-fast-marquee";
 
 const smoothScrollTo = (targetId) => {
     const targetElement = document.getElementById(targetId);
@@ -41,7 +40,7 @@ export default function Home() {
 
     return (
         <Fragment>
-            <div className="fixed flex-col items-center left-0 top-1/3" >
+            {/*<div className="fixed flex-col items-center left-0 top-1/3" >
                 <div className='flex flex-col z-50 rounded-full shadow-md' style={{ backgroundColor: 'rgba(74, 222, 128, 0.1)', backdropFilter: 'blur(10px)' }}>
                     <div className='flex flex-col justify-evenly items-center py-5 gap-10'>
                         <Link
@@ -110,17 +109,11 @@ export default function Home() {
                         </Link>
                     </div>
                 </div>
-            </div>
+    </div>*/}
             <div>
                 <Element name="home">
                     <HomePage />
                 </Element>
-                <Marquee pauseOnHover className='bg-green-400 h-20 text-3xl'>
-                    TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO  TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO{" "}
-                </Marquee>
-                <Marquee pauseOnHover direction='right' className='bg-green-400 h-20 text-3xl mt-5'>
-                    TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO  TECHTANGOO TECHTANGOO TECHTANGOO TECHTANGOO{" "}
-                </Marquee>
                 <Element name="services">
                     <Services />
                 </Element>

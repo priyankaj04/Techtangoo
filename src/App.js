@@ -4,6 +4,7 @@ import Background from './components/background';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import useMousePosition from './components/useMousePosition';
+import Marquee from "react-fast-marquee";
 
 function App() {
 
@@ -21,9 +22,17 @@ function App() {
         }}
         transition={{ type: "tween", ease: "backOut", duration: 0.1 }}
       >
-        {/*<p onMouseEnter={() => { setIsHovered(true) }} onMouseLeave={() => { setIsHovered(false) }}>
-          A visual designer - with skills that haven't been replaced by A.I (yet) - making good shit only if the paycheck is equally good.
-      </p>*/}
+        <div id="home" className='flex-col justify-center flex-1 items-center'>
+          <Marquee onMouseEnter={() => { setIsHovered(true) }} onMouseLeave={() => { setIsHovered(false) }} className='text-white' style={{ fontSize: '150px', fontFamily: '"Bodoni Moda", serif' }}>
+            WE ARE TECHTANGOO WE ARE TECHTANGOO
+          </Marquee>
+          <Marquee onMouseEnter={() => { setIsHovered(true) }} onMouseLeave={() => { setIsHovered(false) }} direction='right' className='text-green-300' style={{ fontSize: '150px', fontFamily: '"Bodoni Moda", serif' }}>
+            WE ARE TECHTANGOO WE ARE TECHTANGOO
+          </Marquee>
+          <Marquee onMouseEnter={() => { setIsHovered(true) }} onMouseLeave={() => { setIsHovered(false) }} className='text-white' style={{ fontSize: '150px', fontFamily: '"Bodoni Moda", serif' }}>
+            WE ARE TECHTANGOO WE ARE TECHTANGOO
+          </Marquee>
+        </div>
       </motion.div>
       <div className='body fixed overflow-x-hidden overflow-y-scroll flex flex-col'>
         <Home />

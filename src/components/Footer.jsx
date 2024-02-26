@@ -8,7 +8,7 @@ function Footer() {
     <div className='w-screen h-auto mt-10' id="contact">
       <div className='flex flex-1 flex-col'>
         <h3 className='text-green-400 text-2xl font-bold text-center'>Contact Us!</h3>
-        <div className='flex justify-center flex-1'>
+        <div className='flex justify-center flex-1 mt-5'>
           <div className='flex flex-col rounded-lg shadow-lg p-10 bg-green-950 gap-5'>
             <div className='mt-3'>
               <p className='text-green-200 ml-1'>Your Email</p>
