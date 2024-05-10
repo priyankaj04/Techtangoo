@@ -19,6 +19,7 @@ import landing3 from '../images/landing3.png';
 import mobile1 from '../images/mobile1.png';
 import mobile2 from '../images/mobile2.png';
 import mobile3 from '../images/mobile3.jpg'
+import { motion } from 'framer-motion';
 
 function Services() {
   const swiperSlide = useSwiperSlide();
@@ -26,7 +27,10 @@ function Services() {
   return (
     <div id="services" className='mt-10 h-auto'>
       <div>
-        <h2 className='text-center font-bold text-green-400 text-2xl'>What we can build for you!!</h2>
+        <motion.h2 initial={{opacity: 0, y:10}}
+          whileInView={{ opacity: 1, y:0 }}
+          viewport={{ once: false }}
+          className='text-center font-bold text-green-400 text-2xl'>What we can build for you!!</motion.h2>
       </div>
       <div className='mt-10 flex justify-center'>
         <div className='grid justify-center items-center gap-20 grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 xl:grid-cols-2 ml-5 md:ml-20 lg:ml-20 xl:ml-20 2xl:ml-20'>
